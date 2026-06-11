@@ -17,10 +17,16 @@ body {
 .header {
     width: 100%;
     position: fixed;
-    height: 8vh;
+    height: 10vh;
     top: 0;
     z-index: 3;
     padding: 1.4vw;
+    background-color: transparent;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+
+.header.scrolled {
+    background-color: #FFF9D2;
 }
 
 .nav {
@@ -42,7 +48,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #FFF9D2;
+    color: #5c5a5a;
 }
 
 .nav .logo img {
@@ -125,7 +131,6 @@ body {
     width: 1vw;
 }
 
-
 .overlay {
     position: absolute;
     height: 100%;
@@ -136,4 +141,9 @@ body {
     background: #000000;
     background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
     z-index: 1;
+}
+
+.projects {
+    background-color: #111111;
+    height: 100vh;
 }
